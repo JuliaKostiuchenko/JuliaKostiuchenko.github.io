@@ -1,0 +1,91 @@
+	body {
+		background-color: gray;
+		border: 2px solid green;
+	}
+
+	header {
+		background:linear-gradient(45deg, red, #FFD700, #BA55D3);
+		position: relative;
+	}
+	header img {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		right:20px;
+		top: 0px;
+	}
+	h1 {
+		padding-top:30px;
+		text-align: center;
+		font-family:segoe script;
+	}
+	header ul {
+		background-color: yellow;
+		display:flex;
+		flex-direction: row;
+	}
+	header li {
+		list-style-type: none;
+		display: inline;
+		margin:0 auto;
+		font-size: 16pt;
+	}
+	#block1, #block2 {
+		background-color: yellow;
+		margin-bottom:10px;
+		margin-left:10px;
+	}
+	#block1 {
+		float: left;
+		width:59%;
+		height: 661px;
+		padding: 10px;
+	}
+	
+	#block2 {
+		width:37%;
+		float: left;
+		display:flex;
+		flex-direction: column;
+		align-items: center;		
+	}
+	#block2 img {
+		width: 180px;
+		height: 160px;
+		margin: 10px;
+	}
+	#block2 div {
+		width: 400px;
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+	}
+	footer {
+		position: relative;
+		left:0px;
+		bottom:0px;
+		clear: both;
+		background:linear-gradient(45deg, red, #FFD700, #BA55D3);
+		padding: 5px;
+	}
+	footer p {
+		text-align: center;		
+	}
+	#calendar1 {
+		height: 80px;
+		border-collapse: collapse;
+		margin-left: 75px;
+		margin-bottom: 10px;	
+		background-color:#F8F8FF;
+   }
+	TD, Tr {
+		width: 30px;
+		text-align: center;
+		border: 3px solid blue;
+		color: black;
+		background-color:#F8F8FF
+   }
+   #calendar1 tr:nth-child(n+3) td:nth-child(6), #calendar1 tr:nth-child(n+3) td:nth-child(7) {background-color:#AFEEEE;}
+   #calendar1 tr:nth-child(3) td:nth-child(-n+4) {background-color:#00BFFF;}
+   #calendar1 tr:nth-child(4) td:nth-child(5) {background-color:red;}
