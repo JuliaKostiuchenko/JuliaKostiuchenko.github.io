@@ -1,76 +1,64 @@
 <html>
 <head>
-	<title> Page </title>
+	<title> MyPage </title>
 	<meta charset="utf-8">
 
 <style>
-
+	* {
+	margin : 0;
+	padding : 0;
+	}
 	body {
-		background-color: gray;
-		border: 2px solid green;
-		display: flex;
-		flex-direction: column;
+		background-color: #ADFF2F;
+		border: 2px solid green;		
 	}
 	header {
-		background:linear-gradient(45deg, #32CD32, #FFD700, #90EE90);
 		border: 1px solid #ADFF2F;
-	}
-	header img {
-		width: 100px;
-		height: 100px;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
 	}
 	h1 {
-		padding-top:30px;
 		text-align: center;
-		font-family:segoe script;
+		font-family: Courier New;
+		font-size: 50pt;
+		flex-grow: 1;		
 	}
-	header ul {
-		background-color: #ADFF2F;
+	nav ul {
+		border: 2px solid #006400;
 		display:flex;
-		flex-direction: row;
-		margin: 5px;
+		flex-direction: row;	
+		justify-content: space-around;
 	}
-	header li {
+	nav li {
 		list-style-type: none;
-		display: inline;
-		margin:0 auto;
+		display: inline;		
 		font-size: 16pt;
 	}
-	.box1 {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-	}
-	#el1 {
-		flex:2;
-	}
+	h2 {
+		text-align: center;
+	}	
 	.block1, .block2 {
-		background-color: #ADFF2F;
 		border: 2px solid #006400;
 	}
 	.block1 {
 		padding: 20px;
 		flex: 1;
-	}
-		
-	.block2 {		
-		display:flex;
-		flex-direction: column;
+	}		
+	.block2 {
 		flex: 1;
 	}	
-	.para {
+	#para {
 		display: flex;
 		flex-direction: row;
 	}
 	#pic {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;		
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;	
 	}
 	#pic img {
-		width: 200px;
-		height: 180px;
+		width: 40%;		
 		margin: 10px;		
 	}
 	footer {
@@ -79,16 +67,39 @@
 		text-align: center;
 		font-size: 16pt;
 	}
+	@media (max-width: 500px) {
+		
+		nav ul {
+				flex-direction: column;
+		}
+			nav li {
+				align-self: center;
+				margin: 0;
+			}
+		#para {
+			display: flex;
+			flex-direction: column;
+			}
+		#pic img {
+			width: 20%;		
+			margin: 0;		
+			}
+		h1 {		
+		font-size: 30pt;	
+			}
+	}
+
 		
 </style>
 </head>
 <body>
 	<header>
-		<div class="box1"> 
-		<h1 id="el1">История магии</h1>
-		<img src="http://s1.iconbird.com/ico/2013/6/377/w256h2561372501695MagicWand5.png"/>
-		</div> 
-		<div> 
+		
+		<h1>Наши эмоции</h1>
+		<img src="http://cdn01.ru/files/users/images/40/41/404192b3868ee93b7f5ddfd24ec2575a.gif"/>
+		 
+	</header>
+	<nav> 
 			<ul>
 				<li><a href="">HOME </a></li>
 				<li><a href="">ФОТО</a></li>
@@ -96,47 +107,51 @@
 				<li><a href="">ГЛОССАРИЙ</a></li>
 				<li><a href="">ФОРУМ</a></li>
 				</ul>
-		</div>
-	</header>
-	<div class="para">
+	</nav>
+	<div id="para">
 		<div class="block1">
 			
-			<p> Магия и волшебство зародились в мире в незапямятные времена, одни говорят – еще до солнца и луны, 
-			другие говорят – сразу вместе с человечеством, третьи – они были даны людям посланниками небес или 
-			подземных глубин. Каждый народ хранит свои предания о древней магии или современные нам воззрения 
-			на проявления волшебства, так что любопытные искатели фактов или редких манускриптов всегда обнаружат 
-			то и другое, невзирая на статут секретности. 
+			<p> Многие из тех, кто основательно интересовался темой эмоций, знают, 
+			что окончательного перечня эмоций нет ни в психологии, ни в физиологии. 
+			При желании можно насчитать более 500 различных эмоциональных состояний. 
+			В разговорной практике люди часто пользуются одним и тем же словом для 
+			обозначения разных переживаний, а их действительный характер становится 
+			ясным только из контекста. В то же время одна и та же эмоция может 
+			обозначаться разными словами. 
 			<br>
-			Данная страница призвана помочь начинающему волшебнику в следующих вопросах:
+			Список эмоций всегда открыт и всегда будет меняться. Список эмоций разный 
+			в конкретной культуре и у конкретного человека. Список эмоций - так же, как
+			список слов живого человеческого языка - постоянно меняется и постоянно 
+			обогащается. Впрочем, какие-то эмоции, как и некоторые слова - забываются...
+			<br>
+			Выделяют следующие виды эмоций:
 			<ol>
-				<li>Периодика истории магии от древнейших времен до нашего времени.</li>
-				<li>Основной вопрос Магии, его возникновение и развитие.</li>
-				<li>Барьер времен и его значение.</li>
-				<li>История Темных Лордов и некоторые персоналии.  Проблемы и формы противостояния волшебников.</li>
-				<li>Исключительные представители Магических Искусств.</li>
-				<li>Британская магическая история.</li>
+				<li>Отрицательная</li>
+				<li>Положительная</li>
+				<li>Нейтральная</li>
+				<li>Нетрадиционная</li>
+				<li>Статическая</li>
+				<li>Динамическая</li>
 			</ol>
 			</p>
 		</div>
 		<div class="block2">
-			<h1>ФОТО</h1>
+			<h2>ФОТО</h2>
 			<div id="pic">
-				<img src="http://static.diary.ru/userdir/3/0/4/1/3041691/83888467.jpg"/>
-				<img src="https://upload.wikimedia.org/wikipedia/ru/thumb/1/1c/Gandalf_the_White.jpg/267px-Gandalf_the_White.jpg"/>
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_qfJ8E6Yhdh9T1xdvDjImrLEXPAlRI0X6sAlUH05OQwFL1WU"/>
-				<img src="https://pbs.twimg.com/profile_images/446694694785785856/PDS9K20P.jpeg"/>
+				<img src="http://liubavyshka.ru/_ph/140/2/529737549.gif"/>
+				<img src="https://biznesinter.ru/wp-content/uploads/2018/11/0_af727_3f59e3a6_S.gif"/>
+				<img src="http://justclickit.ru/smiles/image/emotions/emotions%20(1062).gif"/>
+				<img src="http://liubavyshka.ru/_ph/146/1/531976865.jpg?1549320066"/>
 			</div>
 		</div>
 	</div>	
-		<footer>
-			<p>
-			«История магии» - крайне обширный предмет, 
-			который меняется вместе с историей мира.
-			</p>
-		</footer>
+	<footer>
+		<p>
+			Красивых вам, глубоких эмоций!
+		</p>
+	</footer>
 	
 
 
 </body>
 </html>
-
