@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title> MyPage </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css1/style.css">
+<style>
+		
+</style>
+</head>
+<body>
+	<header>
+		
+		<h1 id="colorh1">Наши эмоции</h1>
+		<img  id="bord1" src="http://cdn01.ru/files/users/images/40/41/404192b3868ee93b7f5ddfd24ec2575a.gif"/>
+		 
+	</header>
+	<nav> 
+			<ul>
+				<li><a href="">HOME </a></li>
+				<li><a href="">ФОТО</a></li>
+				<li><a href="">ДОПОЛНИТЕЛЬНО</a></li>
+				<li><a href="">ГЛОССАРИЙ</a></li>
+				<li><a href="">ФОРУМ</a></li>
+				</ul>
+	</nav>
+	<div id="para">
+		<div class="block1">
+			
+			<p> Многие из тех, кто основательно интересовался темой эмоций, знают, 
+			что окончательного перечня эмоций нет ни в психологии, ни в физиологии. 
+			При желании можно насчитать более 500 различных эмоциональных состояний. 
+			В разговорной практике люди часто пользуются одним и тем же словом для 
+			обозначения разных переживаний, а их действительный характер становится 
+			ясным только из контекста. В то же время одна и та же эмоция может 
+			обозначаться разными словами. 
+			<br>
+			Список эмоций всегда открыт и всегда будет меняться. Список эмоций разный 
+			в конкретной культуре и у конкретного человека. Список эмоций - так же, как
+			список слов живого человеческого языка - постоянно меняется и постоянно 
+			обогащается. Впрочем, какие-то эмоции, как и некоторые слова - забываются...
+			<br>
+			Выделяют следующие виды эмоций:
+			<ol>
+				<li>Отрицательная</li>
+				<li>Положительная</li>
+				<li>Нейтральная</li>
+				<li>Нетрадиционная</li>
+				<li>Статическая</li>
+				<li>Динамическая</li>
+			</ol>
+			</p>
+		</div>
+		<div class="block2">
+			<h2>ФОТО</h2>
+			<div id="pic">
+				<div>
+				<img id="bigsize1" src="http://liubavyshka.ru/_ph/140/2/529737549.gif"/> <br>
+				<button id="btn1" onclick="changeSize1()"> Увеличить </button>
+				<button id="btn1" onclick="changeSizev1()"> Вернуть </button>
+				</div>
+				<div>
+				<img src="https://biznesinter.ru/wp-content/uploads/2018/11/0_af727_3f59e3a6_S.gif"/>
+				</div>
+				<div>
+				<img src="http://justclickit.ru/smiles/image/emotions/emotions%20(1062).gif"/>
+				</div>
+				<div>
+				<img src="http://liubavyshka.ru/_ph/146/1/531976865.jpg?1549320066"/>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<footer>
+		<p>
+			Красивых вам, глубоких эмоций!
+		</p>
+	</footer>
+	
+	<script type="text/javascript">
+		var elemcolorh1 = document.getElementById('colorh1');
+		var elembigsize1 = document.getElementById('bigsize1');
+		var elembord1 = document.getElementById('bord1');
+
+		function changeRed() {
+			elemcolorh1.style.color = 'red';
+		}
+		function changeBlue() {
+			elemcolorh1.style.color = 'blue';
+		}
+		function changeSize1() {
+			elembigsize1.style.width = '300px';
+			}
+		function changeSizev1() {
+			elembigsize1.style.width = '80%';
+			}	
+		function changeBorder1() {
+			elembord1.style.border = '10px dotted #C71585';
+			}	
+		setTimeout(changeBorder1, 3000);
+		setInterval(changeRed, 1000);
+		setInterval(changeBlue, 2000);
+		
+	</script>
+</body>
+</html>
