@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My project</title>
+	<title>Про мене</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,9 +12,9 @@
 
 
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="bloks1.css">
-	<link rel="stylesheet" href="bloks2.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bloks1.css">
+	<link rel="stylesheet" href="css/bloks2.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	
 
@@ -51,7 +51,7 @@
       </ul>
       <ul class="navbar-nav">
 	  
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="about.html">Про мене</a>
         </li>
 		<li class="nav-link d-none d-md-block">&bull;</li>
@@ -59,15 +59,15 @@
 		<a class="nav-link" href="contacts.html">Контакти</a>
         </li>
 		</ul>
-     <!-- 	 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Пошук" aria-label="Search">
-        <button class="btn btn-outline-success my-sm-0" type="submit">Пошук</button>
-      </form>	--> 
     </div>
 	</nav>	
   </div>
-	
+  <aside>
+  	<p>Пошук:</p>
+	<input type="text" id="afind" class="form-control" placeholder="Знайти">
+	<button onclick="findGoogle(); return false" type="submit" class="btn btn-primary">Пошук Google</button>
+	<button onclick="findSelect(); return false" type="submit" class="btn btn-primary">Відмітити</button>
+  </aside>	
 	<main>
 	
 
@@ -82,7 +82,9 @@
 		</div>	
 		<div class="notemain">
 			<p><span>Посада, місце роботи</span> -  вчитель інформатики, Чернігівська загальноосвітня школа I-III ступенів № 19.</p>
-			<p><span>Освіта спеціальність</span> – вища, Чернігівський національний педагогічний університет, викладач інформатики (2018);</p>
+			<p><span>Освіта спеціальність</span> – вища, <br>Чернігівський державний педагогічний університет імені Т.Г.Шевченка, вчитель математики та основ кнономіки (2009 р.);
+			 		<br>Чернігівський національний педагогічний університет імені Т.Г.Шевченка, магістр педагогічної освіти викладач математики (2009 р.);
+					<br>Національний університет "Чернігівський колегіум" імені Т.Г.Шевченка, магістр педагогічної освіти викладач інформатики (2018 р.).</p>
 		</div>		
 	</main>
 	
@@ -90,7 +92,7 @@
 		<section id="footer1">
 		  <div>
 			<span>Написати мені:</span><br>
-			myName@gmail.com
+			Julia@gmail.com
 		  </div>
 		  <div>
 		    <span>Місце роботи:</span><br>

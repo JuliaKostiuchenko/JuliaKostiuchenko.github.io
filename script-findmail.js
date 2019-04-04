@@ -1,4 +1,4 @@
- function sendMail() {
+﻿ function sendMail() {
     var an = document.getElementById("aname");
 	var am = document.getElementById("amail");
 	var at = document.getElementById("atema");
@@ -27,7 +27,7 @@
  function findGoogle() {
     var af = document.getElementById("afind");
 	if (af.value) {
-		var link = 'https://www.google.com.ua/search?q=site:chnpu.edu.ua+'+af.value;
+		var link = 'https://www.google.com.ua/search?q=site:juliakostiuchenko.github.io+'+af.value;
 		//window.location.href = link;
 		window.open(link)
 	} else {alert('Недостатньо даних!');}
