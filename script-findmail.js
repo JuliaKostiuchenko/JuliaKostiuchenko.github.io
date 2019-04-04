@@ -4,9 +4,9 @@
 	var at = document.getElementById("atema");
 	var me = document.getElementById("amessage");
 	if (an.value && am.value && at.value && me.value) {
-		var link = 'mailto:'+am.value
+		var link = 'mailto:juliakostuchenko-332@ukr.net
 					+'?subject='+at.value
-					+'&body=Hello '+an.value+'. '+me.value;
+					+'&body=I am '+an.value+'. '+me.value+'. My e-mail: '+am.value;
     window.location.href = link;
 	} else {alert('Недостатньо даних!');}
 }
